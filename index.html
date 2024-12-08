@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>log in </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+    <div class="login">
+        <input type="text" placeholder="Enter your username" id="username"> <br> <br>
+        <input type="text" placeholder="Enter your password" id="password"> <br> <br>
+        <button onclick="loginsystem()">Login</button>
+    </div>
+    </div>
+
+<script>
+    function loginsystem(){
+        var username= document.getElementById("username").value;
+        var password= document.getElementById("password").value;
+
+        var regUsername = 'admin';
+        var regPass= "1234";
+
+        if(username == regUsername && password == regPass)
+        {
+            location.replace ("https://www.facebook.com/mdnoyon.hossain.369");
+        }
+        else if(username != regUsername && password != regPass)
+        {
+            document.write("Apnar username o vul apnar password o vul");
+        }
+        else if (username != regUsername && password ==regPass)
+        {
+            document.write("username is incorrect");
+        }
+        else if (username == regUsername && password !=regPass)
+        {
+            document.write("password is incorrect");
+        }
+    }
+</script>
+  </body>
+</html>

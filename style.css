@@ -1,0 +1,41 @@
+
+body {
+    background: beige !important;
+}
+.container .login
+{
+    background: black;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 20px 20px;
+}
+
+input#username 
+{
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+input#password 
+{
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+button 
+{
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 5px !important;
+    border: none;
+    background: rgb(0, 132, 255);
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
